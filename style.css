@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@100;400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' ,'Lato', sans-serif;
+    background-color: #f1f1f1;
+}
+
+html {
+    font-size: 62.5%
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 15rem auto;
+    padding: 2rem 2rem 2rem 0;
+    border-radius: 2rem;
+    border: 1px solid #e5e5e5;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 5px 3px rgba(206, 206, 206, 0.4);
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.checkout-container .image {
+    position: relative;
+    width: 70%;
+    height: 350px;
+    background-image: linear-gradient(rgba(129, 219, 255, 0.5), rgba(164, 255, 240, 0.714)), url(./image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 10px 4px rgba(125, 125, 125, 0.4);
+}
+
+.product-details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 400px; */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.044), rgba(255, 255, 255, 0.071)), url(./image/product.jpg);
+    box-shadow: 0 0 4px 1px rgba(213, 213, 213, 0.14);
+}
+
+.product-details h2{
+    text-align: center;
+    color: #111111;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.product-details p{
+    text-align: center;
+    color: #1c1a7d;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.form-container{
+    background-color: #fff;
+}
+
+.checkout-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.checkout-container form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.checkout-container form label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #999;
+}
+
+.checkout-container form input[type="text"],
+.checkout-container form input[type="number"],
+.checkout-container form input[type="date"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.checkout-container form button {
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(90deg, #48ddfa, #4c86f9);
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    cursor: pointer;
+}
