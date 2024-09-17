@@ -173,7 +173,7 @@ img {
 .success-card p,
 .error-card p {
   text-align: center;
-  color: #1c1a7d;
+  color: #333;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -181,13 +181,21 @@ img {
 }
 
 .success-card i {
-  color: #4caf50;
-  font-size: 8rem;
-  margin: 0rem 17rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+    color: #4caf50;
+    font-size: 8rem;
+    margin: 2rem 0;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .success-card i, .error-card i {
+    animation: pulse 1.5s infinite;
+  }
 
 .success-card a {
   color: #fafafa;
@@ -197,9 +205,13 @@ img {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0rem 15rem;
+  margin: 0rem auto;
+  display: block;
+  text-align: center;
+  width: fit-content;
   cursor: pointer;
   box-shadow: 2px 2px 8px 1px rgba(158, 158, 158, 0.5);
+  transition: background-color 0.5s ease-in-out;
   &:hover {
     background-color: #4c7cff;
     box-shadow: 2px 2px 10px 2px rgba(158, 158, 158, 0.5);
@@ -207,10 +219,8 @@ img {
 }
 
 .error-card i {
-  color: #f44336;
-  font-size: 8rem;
-  margin: 0rem 17.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+    color: #f44336;
+    font-size: 8rem;
+    margin: 2rem 0;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
